@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML ¬ Universe | Premium MTA Resources</title>
+    <meta name="description" content="La mejor plataforma de recursos premium para MTA. Encuentra scripts, modelos, texturas y más.">
+    <link rel="icon" type="image/png" href="https://images-ext-1.discordapp.net/external/vY7vB02RrhG9UCSVBdMP7A058f09zxQknsHuzka4lEo/%3Fsize%3D4096/https/cdn.discordapp.com/icons/1339063042029125653/28e4bc33fbaa465b9fad7560ea14542e.png?format=webp&quality=lossless&width=205&height=205">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Preload de fuentes e imágenes críticas -->
+    <link rel="preload" href="fonts/cyberpunk.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">HTML ¬ Universe</div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-text">HTML ¬ Universe</span>
+                <div class="logo-glow"></div>
+            </div>
+            <div class="nav-links">
+                <a href="#inicio" class="nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Inicio</span>
+                </a>
+                <a href="#recursos" class="nav-link">
+                    <i class="fas fa-cube"></i>
+                    <span>Recursos</span>
+                </a>
+                <a href="#texturas" class="nav-link">
+                    <i class="fas fa-image"></i>
+                    <span>Texturas</span>
+                </a>
+                <a href="#modelos" class="nav-link">
+                    <i class="fas fa-car"></i>
+                    <span>Modelos</span>
+                </a>
+                <a href="#interiores" class="nav-link">
+                    <i class="fas fa-building"></i>
+                    <span>Interiores</span>
+                </a>
+                <a href="#contacto" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contacto</span>
+                </a>
+            </div>
+            <div class="user-actions">
+                <div class="search-trigger">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="cart">
+                    <a href="#carrito">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+                <div class="user-menu">
+                    <a href="#cuenta">
+                        <i class="fas fa-user"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Barra de búsqueda expandible -->
+    <div class="search-overlay">
+        <div class="search-container">
+            <input type="text" placeholder="Buscar recursos, texturas, modelos...">
+            <button class="close-search">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="quick-results">
+            <!-- Los resultados se cargarán dinámicamente -->
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section con Parallax -->
+        <section class="hero">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <h1 class="glitch" data-text="HTML ¬ Universe">HTML ¬ Universe</h1>
+                <p class="hero-subtitle">Tu fuente definitiva de recursos para MTA</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">
+                        <span class="btn-content">
+                            <i class="fas fa-rocket"></i>
+                            Explorar Recursos
+                        </span>
+                    </button>
+                    <button class="btn-secondary">
+                        <span class="btn-content">
+                            <i class="fas fa-play"></i>
+                            Ver Tutoriales
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <span>Scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- Características con animaciones -->
+        <section class="features">
+            <div class="feature-card" data-aos="fade-up">
+                <div class="feature-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3>Calidad Premium</h3>
+                <p>Recursos de la más alta calidad, optimizados y probados</p>
+                <div class="feature-hover">
+                    <span class="feature-more">Saber más</span>
+                </div>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-icon">
+                    <i class="fas fa-sync"></i>
+                </div>
+                <h3>Actualizaciones Constantes</h3>
+                <p>Nuevos recursos cada semana, siempre a la vanguardia</p>
+                <div class="feature-hover">
+                    <span class="feature-more">Saber más</span>
+                </div>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>Soporte 24/7</h3>
+                <p>Asistencia personalizada en cualquier momento</p>
+                <div class="feature-hover">
+                    <span class="feature-more">Saber más</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recursos Destacados con filtros avanzados -->
+        <section class="resources">
+            <div class="section-header">
+                <h2>Recursos Destacados</h2>
+                <p>Descubre nuestros recursos más populares y mejor valorados</p>
+            </div>
+            
+            <div class="resource-filters">
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-border-all"></i>
+                        Todos
+                    </button>
+                    <button class="filter-btn" data-filter="textures">
+                        <i class="fas fa-image"></i>
+                        Texturas
+                    </button>
+                    <button class="filter-btn" data-filter="models">
+                        <i class="fas fa-cube"></i>
+                        Modelos
+                    </button>
+                    <button class="filter-btn" data-filter="interiors">
+                        <i class="fas fa-door-open"></i>
+                        Interiores
+                    </button>
+                    <button class="filter-btn" data-filter="scripts">
+                        <i class="fas fa-code"></i>
+                        Scripts
+                    </button>
+                </div>
+                <div class="filter-options">
+                    <select class="sort-select">
+                        <option value="popular">Más populares</option>
+                        <option value="recent">Más recientes</option>
+                        <option value="price-low">Menor precio</option>
+                        <option value="price-high">Mayor precio</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="resource-grid">
+                <!-- Las tarjetas de recursos se generarán dinámicamente -->
+            </div>
+
+            <div class="load-more">
+                <button class="btn-secondary">
+                    <span class="btn-content">
+                        <i class="fas fa-spinner"></i>
+                        Cargar más
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Testimonios con slider -->
+        <section class="testimonials">
+            <div class="section-header">
+                <h2>Lo que dicen nuestros clientes</h2>
+                <p>Opiniones verificadas de nuestra comunidad</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                    <!-- Los testimonios se generarán dinámicamente -->
+                </div>
+                <div class="testimonial-nav">
+                    <button class="prev-testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="next-testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter con efectos -->
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Únete a nuestra comunidad</h2>
+                <p>Recibe las últimas actualizaciones y ofertas exclusivas</p>
+                <form class="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">
+                            <span class="btn-content">
+                                <i class="fas fa-paper-plane"></i>
+                                Suscribirse
+                            </span>
+                        </button>
+                    </div>
+                    <div class="form-footer">
+                        <label class="checkbox-container">
+                            <input type="checkbox" required>
+                            <span class="checkmark"></span>
+                            Acepto recibir correos promocionales
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de Pago Mejorado -->
+    <div class="payment-modal" id="paymentModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Finalizar Compra</h2>
+                <button class="close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="payment-summary">
+                    <h3>Resumen de compra</h3>
+                    <div class="cart-items">
+                        <!-- Items del carrito -->
+                    </div>
+                    <div class="cart-total">
+                        <span>Total:</span>
+                        <span class="total-amount">$0.00</span>
+                    </div>
+                </div>
+                <div class="payment-method">
+                    <h3>Método de pago</h3>
+                    <div class="payment-option active">
+                        <div class="nequi-logo-container">
+                            <img src="https://w7.pngwing.com/pngs/416/611/png-transparent-nequi-hd-logo.png" alt="Nequi Logo" class="nequi-logo">
+                        </div>
+                        <span>Pago con Nequi</span>
+                    </div>
+                </div>
+                <div class="payment-steps">
+                    <div class="step active">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Abre la app de Nequi</h4>
+                            <p>Inicia sesión en tu cuenta</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Selecciona "Enviar"</h4>
+                            <p>Busca la opción de envío</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Ingresa el número</h4>
+                            <div class="nequi-number">
+                                <span>3247453009</span>
+                                <button class="copy-number">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Ingresa el monto</h4>
+                            <div class="payment-amount">$<span id="paymentAmount">0.00</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="confirmPayment" class="btn-primary">
+                    <span class="btn-content">
+                        <i class="fas fa-check"></i>
+                        Ya hice el procedimiento
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notificaciones Toast -->
+    <div class="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
